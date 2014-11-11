@@ -1,0 +1,21 @@
+{
+  "name": "robloach/hhvm-designpatterns",
+  "description": "Singleton and Factory design patterns, implemented for use with HHVM.",
+  "autoload": {
+    "psr-4": {
+      "RobLoach\\DesignPatterns\\": "."
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "scripts": {
+    "test": "hhvm vendor/bin/phpunit Test --bootstrap vendor/autoload.php",
+    "Test": "composer test"
+  },
+  "archive": {
+    "exclude": [
+      "Test"
+    ]
+  }
+}
